@@ -12,5 +12,10 @@ for(let i = 0; i < completeButton.length; i++){
   let currentNavCheckBox = parseInt(navCheckBox.innerText);
    currentNavCheckBox++;
    navCheckBox.innerText = currentNavCheckBox;
+   completed.disabled = true;
+   if(completed.disabled == true){
+    completed.style.background = 'gray';
+    completed.style.color = 'darkgray';
+   }
   })
 }
