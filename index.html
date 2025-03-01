@@ -26,12 +26,12 @@
     <!-- Count & theme -->
     <div class="flex items-center justify-center gap-[38px]">
       <!-- Checkbox & Count -->
-      <div class="bg-slate-200 flex items-center gap-2 rounded-[60px] p-4">
+      <div class="bg-slate-100 flex items-center gap-2 rounded-[60px] p-4">
         <img class="w-8 h-8" src="assets/checkbox.png" alt="">
         <h1 id="nav-checkbox" class="text-3xl font-bold">0</h1>
        </div>
        <!-- Theme Btn-->
-        <div class="bg-slate-200 rounded-full p-3">
+        <div class="bg-slate-100 rounded-full p-3">
          <img src="assets/theme-btn.png" alt="">
         </div>
     </div>
@@ -55,7 +55,7 @@
            </div>
           </div>
           <!-- Discover -->
-          <div class="col-span-2 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] pr-[85px] pl-[40px] py-[30px] flex items-center gap-[22px] rounded-xl">
+          <div id="discover" class="cursor-pointer col-span-2 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] pr-[85px] pl-[40px] py-[30px] flex items-center gap-[22px] rounded-xl">
             <img class="w-[79px] h-[79px]" src="assets/board.png" alt="">
             <h2 class="text-white text-[24px] font-medium">Discover Something <br> New Today!</h2>
           </div>
@@ -79,7 +79,7 @@
               ShopEase
             </button>
             <!-- ........................... -->
-            <h1 class="text-2xl font-medium text-[#00303C]">Fix Mobile Button Issue</h1>
+            <h1 class="card-title text-2xl font-medium text-[#00303C]">Fix Mobile Button Issue</h1>
             <!-- ........................... -->
             <div class="bg-white rounded-xl p-4">
               <p class="text-4">Debug using Chrome DevTools, check for overlappin...</p>
@@ -103,7 +103,7 @@
               CloudSync
             </button>
             <!-- ........................... -->
-            <h1 class="text-2xl font-medium text-[#00303C]">Add Dark Mode</h1>
+            <h1 class="card-title text-2xl font-medium text-[#00303C]">Add Dark Mode</h1>
             <!-- ........................... -->
             <div class="bg-white rounded-xl p-4">
               <p class="text-4">Debug using Chrome DevTools, check for overlappin...</p>
@@ -127,7 +127,7 @@
               SwiftPay
             </button>
             <!-- ........................... -->
-            <h1 class="text-2xl font-medium text-[#00303C]">Optimize  Home page </h1>
+            <h1 class="card-title text-2xl font-medium text-[#00303C]">Optimize  Home page </h1>
             <!-- ........................... -->
             <div class="bg-white rounded-xl p-4">
               <p class="text-4">Debug using Chrome DevTools, check for overlappin...</p>
@@ -151,7 +151,7 @@
               Meta
             </button>
             <!-- ........................... -->
-            <h1 class="text-2xl font-medium text-[#00303C]">Add new emoji 🤲</h1>
+            <h1 class="card-title text-2xl font-medium text-[#00303C]">Add new emoji 🤲</h1>
             <!-- ........................... -->
             <div class="bg-white rounded-xl p-4">
               <p class="text-4">Debug using Chrome DevTools, check for overlappin...</p>
@@ -175,7 +175,7 @@
               Google LLC
             </button>
             <!-- ........................... -->
-            <h1 class="text-2xl font-medium text-[#00303C]">Integrate OpenAI API </h1>
+            <h1 class="card-title text-2xl font-medium text-[#00303C]">Integrate OpenAI API </h1>
             <!-- ........................... -->
             <div class="bg-white rounded-xl p-4">
               <p class="text-4">Debug using Chrome DevTools, check for overlappin...</p>
@@ -199,7 +199,7 @@
               Glassdoar
             </button>
             <!-- ........................... -->
-            <h1 class="text-2xl font-medium text-[#00303C]">Improve Job searching </h1>
+            <h1 class="card-title text-2xl font-medium text-[#00303C]">Improve Job searching </h1>
             <!-- ........................... -->
             <div class="bg-white rounded-xl p-4">
               <p class="text-4">Debug using Chrome DevTools, check for overlappin...</p>
@@ -229,13 +229,10 @@
         <span class="text-xl font-medium">Activity Log</span>
        </div>
        <div class="flex justify-center">
-        <button class="bg-[#3752FD] text-white text-4 font-medium px-5 py-[10px] rounded-lg my-4">Clear History</button>
+        <button id="clear-history" class="bg-[#3752FD] text-white text-4 font-medium px-5 py-[10px] rounded-lg my-4">Clear History</button>
        </div>
        <!-- History -->
         <div id="history" class="space-y-2 mt-6">
-          <div class="bg-slate-100 p-[10px] rounded-lg">
-            <p>You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
-          </div>
           <div class="bg-slate-100 p-[10px] rounded-lg">
             <p>You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
           </div>
@@ -246,6 +243,9 @@
     
      </div>
  </section>
+ 
+ <script src="discover.js"></script>
+ <script src="clearHistory.js"></script>
  <script src="complete.js"></script>
 </body>
 </html>

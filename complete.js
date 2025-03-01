@@ -13,9 +13,22 @@ for(let i = 0; i < completeButton.length; i++){
    currentNavCheckBox++;
    navCheckBox.innerText = currentNavCheckBox;
    completed.disabled = true;
+
+   // History Make
+   const history = document.getElementById('history');
+   const cardTitle = document.querySelectorAll('.card-title').innerText;
+   console.log(cardTitle);
+   const div = document.createElement('div');
+   div.innerText = 'You have completed the task ${cardTitle} at ${}';
+   div.classList.add('bg-slate-100');
+   div.classList.add('p-[10px]');
+   div.classList.add('rounded-lg');
+   history.appendChild(div);
+
+  //  Button disabled
    if(completed.disabled == true){
     completed.style.background = 'gray';
-    completed.style.color = 'darkgray';
+    completed.style.color = 'lightgray';
    }
   })
 }
