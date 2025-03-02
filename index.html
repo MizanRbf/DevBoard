@@ -13,8 +13,8 @@
   <!-- CDN -->
    
 </head>
-<body class="">
- <section class="bg-slate-100 h-full py-6">
+<body id="body">
+ <section id="section" class="bg-slate-100 h-full py-6">
   <div class="mx-[140px]">
     <!-- Navbar -->
     <nav class="bg-white rounded-xl flex justify-between items-center px-[24px] py-[18px]">
@@ -26,12 +26,12 @@
     <!-- Count & theme -->
     <div class="flex items-center justify-center gap-[38px]">
       <!-- Checkbox & Count -->
-      <div class="bg-slate-100 flex items-center gap-2 rounded-[60px] p-4">
-        <img class="w-8 h-8" src="assets/checkbox.png" alt="">
+      <div class="bg-slate-100 flex items-center gap-4 rounded-[100px] px-4 py-2">
+        <img class="w-6 h-6" src="assets/checkbox.png" alt="">
         <h1 id="nav-checkbox" class="text-3xl font-bold">0</h1>
        </div>
        <!-- Theme Btn-->
-        <div class="bg-slate-100 rounded-full p-3">
+        <div id="theme-button" class="bg-slate-100 rounded-full p-3 cursor-pointer">
          <img src="assets/theme-btn.png" alt="">
         </div>
     </div>
@@ -41,9 +41,9 @@
 
 
       <!-- Main -->
-      <div class="col-span-3 bg-white rounded-xl p-6">
+      <div class="col-span-3 bg-white rounded-xl">
         <!-- Header Section -->
-         <header class="grid grid-cols-4 gap-6 pb-8">
+         <header class="grid grid-cols-4 gap-6 pb-8 p-6">
           <!-- Checkbox & task -->
           <div id="task-assigned" class="bg-slate-100 p-8 flex items-center gap-5 rounded-xl">
            <div class="bg-white p-[18px] rounded-full">
@@ -66,15 +66,15 @@
             </div>
             <div>
              <p class="text-[#00303C] text-[22px] font-normal">Wed ,</p>
-             <h1 class="text-[22px] font-bold">Jul 28 2025</h1>
+             <h1 id="new-date" class="text-[22px] font-bold">Jul 28 2025</h1>
             </div>
            </div>
          </header>
-
+         <hr class="border border-dashed border-gray-200 my-2">
          <!-- Cards -->
-         <div class="grid grid-cols-3 gap-9 pt-8">
+         <div class="grid grid-cols-3 gap-9 pt-8 p-6">
           <!-- Card-1 -->
-          <div class="bg-slate-100 rounded-xl p-6 space-y-4">
+          <div class="bg-slate-100 rounded-xl p-6 space-y-4 card">
             <button class="bg-white px-4 py-2 rounded-lg">
               ShopEase
             </button>
@@ -98,7 +98,7 @@
 <!-- ........................... -->
           </div>
           <!-- Card-2 -->
-          <div class="bg-slate-100 rounded-xl p-6 space-y-4">
+          <div class="bg-slate-100 rounded-xl p-6 space-y-4 card">
             <button class="bg-white px-4 py-2 rounded-lg">
               CloudSync
             </button>
@@ -122,7 +122,7 @@
 <!-- ........................... -->
           </div>
           <!-- Card-3 -->
-          <div class="bg-slate-100 rounded-xl p-6 space-y-4">
+          <div class="bg-slate-100 rounded-xl p-6 space-y-4 card">
             <button class="bg-white px-4 py-2 rounded-lg">
               SwiftPay
             </button>
@@ -146,7 +146,7 @@
 <!-- ........................... -->
           </div>
           <!-- Card-4 -->
-          <div class="bg-slate-100 rounded-xl p-6 space-y-4">
+          <div class="bg-slate-100 rounded-xl p-6 space-y-4 card">
             <button class="bg-white px-4 py-2 rounded-lg">
               Meta
             </button>
@@ -170,7 +170,7 @@
 <!-- ........................... -->
           </div>
           <!-- Card-5 -->
-          <div class="bg-slate-100 rounded-xl p-6 space-y-4">
+          <div class="bg-slate-100 rounded-xl p-6 space-y-4 card">
             <button class="bg-white px-4 py-2 rounded-lg">
               Google LLC
             </button>
@@ -194,7 +194,7 @@
 <!-- ........................... -->
           </div>
           <!-- Card-6 -->
-          <div class="bg-slate-100 rounded-xl p-6 space-y-4">
+          <div class="bg-slate-100 rounded-xl p-6 space-y-4 card">
             <button class="bg-white px-4 py-2 rounded-lg">
               Glassdoar
             </button>
@@ -223,19 +223,18 @@
 
 
       <!-- Aside-Bar -->
-      <div class="bg-white rounded-xl p-6">
-       <div class="flex items-center gap-4 justify-center">
+      <div class="bg-white rounded-xl">
+       <div class="flex items-center gap-4 justify-center  p-6">
         <img class="w-6 h-6" src="assets/activity.png" alt="">
         <span class="text-xl font-medium">Activity Log</span>
        </div>
        <div class="flex justify-center">
         <button id="clear-history" class="bg-[#3752FD] text-white text-4 font-medium px-5 py-[10px] rounded-lg my-4">Clear History</button>
        </div>
+       <hr class="border border-dashed border-gray-200 my-2">
        <!-- History -->
-        <div id="history" class="space-y-2 mt-6">
-          <div class="bg-slate-100 p-[10px] rounded-lg">
-            <p>You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
-          </div>
+        <div id="history" class="space-y-2 mt-6  p-6">
+          
         </div>
       </div>
      </div>
@@ -244,8 +243,10 @@
      </div>
  </section>
  
+ <script src="history.js"></script>
  <script src="discover.js"></script>
  <script src="clearHistory.js"></script>
  <script src="complete.js"></script>
+ <script src="themeChange.js"></script>
 </body>
 </html>
