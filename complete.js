@@ -1,11 +1,18 @@
 const completeButton = document.querySelectorAll('.complete');
 const taskNumber = document.getElementById('task-number');
 const navCheckBox = document.getElementById('nav-checkbox');
-console.log(taskNumber);
+
+let clickedBtns = new Set();
 for(let i = 0; i < completeButton.length; i++){
   let completed = completeButton[i];
   completed.addEventListener('click',function(){
     alert('Board Updated Successfully');
+  
+    clickedBtns.add(i);
+
+    if(clickedBtns.size === completeButton.length){
+      alert('congrates!!! You have completed all the current task')
+    }
 
   // Task number less
   let currentTaskNumber = parseInt(taskNumber.innerText);
@@ -19,7 +26,6 @@ for(let i = 0; i < completeButton.length; i++){
 
 
    completed.disabled = true;
-
    // History Make
    weekDays = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
    const currentDate = new Date();
@@ -28,7 +34,7 @@ for(let i = 0; i < completeButton.length; i++){
    const finalCurrentDay = weekDays[currentDay];
 
    const history = document.getElementById('history');
-   const currentCard = this.closest('.card');
+   const currentCard = this.closest('.cards');
    
    const cardTitle = currentCard.querySelector('.card-title').innerText;
    
@@ -47,5 +53,6 @@ for(let i = 0; i < completeButton.length; i++){
     completed.style.background = 'gray';
     completed.style.color = 'lightgray';
    }
+   
   })
 }
