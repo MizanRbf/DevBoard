@@ -8,9 +8,9 @@ const themes =[
   "bg-red-200"
 ]
 themeChange.addEventListener('click', function(){
-  const section = document.getElementById('section');
- section.classList.remove(...themes);
+  const body = document.getElementById('body');
+ body.classList.remove(...themes);
  const randomTheme = Math.floor(Math.random() * themes.length);
- section.classList.add(themes[randomTheme]);
+ body.classList.add(themes[randomTheme]);
  
 });
