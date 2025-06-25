@@ -4,19 +4,6 @@ An elegant, interactive browser-based utility app built using **HTML**, **Tailwi
 
 ---
 
-## 🔗 Live Preview
-
-🚀 [View Live Site](https://mizanrbf.github.io/DevBoard/)  
-
----
-
-## 🖼️ Preview
-
-![App Screenshot](assets/screenshot.png)  
-*(Include a screenshot inside the `assets/` folder)*
-
----
-
 ## 🛠️ Tech Stack
 
 - ✅ **HTML5**
@@ -44,6 +31,12 @@ An elegant, interactive browser-based utility app built using **HTML**, **Tailwi
 
 - CDN-based [TailwindCSS](https://tailwindcss.com/)
 - No framework or package manager needed
+
+---
+
+## 🔗 Live Preview
+
+🚀 [View Live Site](https://mizanrbf.github.io/DevBoard/)  
 
 ---
 
