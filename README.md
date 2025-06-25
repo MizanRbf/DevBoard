@@ -12,11 +12,6 @@ An elegant, interactive browser-based utility app built using **HTML**, **Tailwi
 
 ---
 
-## 📁 Project Structure
-
-
----
-
 ## ✨ Features
 
 - 🧾 **Discover Pages** – Dynamic content rendering using `discover.html`, `discover.js`, and `discover2.js`
