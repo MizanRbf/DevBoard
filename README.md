@@ -6,8 +6,7 @@ An elegant, interactive browser-based utility app built using **HTML**, **Tailwi
 
 ## 🔗 Live Preview
 
-🚀 [View Live Site](https://your-live-link.netlify.app)  
-*(Replace with your actual Netlify/Vercel/GitHub Pages URL)*
+🚀 [View Live Site](https://mizanrbf.github.io/DevBoard/)  
 
 ---
 
