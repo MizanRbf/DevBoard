@@ -40,3 +40,12 @@ An elegant, interactive browser-based utility app built using **HTML**, **Tailwi
 1. Clone the repository:
    ```bash
    git clone https://github.com/MizanRbf/DevBoard.git
+
+2. Open the Project in Browser
+
+   You can launch the app by simply opening the index.html file:
+   - Navigate to the project folder.
+   - Double-click on index.html, or
+   - Right-click and choose “Open with” → your preferred browser
+That's it! The app will run locally — no installation or setup needed.
+
