@@ -52,4 +52,4 @@ An elegant, interactive browser-based utility app built using **HTML**, **Tailwi
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/MizanRbf/smart-discovery-app.git
+   git clone https://github.com/MizanRbf/DevBoard.git
